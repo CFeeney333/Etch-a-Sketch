@@ -25,3 +25,8 @@ button {
     margin: 10px;
     font-size: x-large;
 }
+
+h1 {
+    margin: 0px;
+    text-decoration: underline;
+}
