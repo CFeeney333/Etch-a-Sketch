@@ -42,4 +42,5 @@ function onSize(e) {
   } while (newSize > 100);
   currentSize = newSize;
   size.textContent = currentSize;
+  createGrid(currentSize);
 }
