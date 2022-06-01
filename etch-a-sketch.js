@@ -9,6 +9,9 @@ const size = document.querySelector("#current-size");
 let currentSize = DEFAULT_SIZE;
 size.textContent = currentSize;
 
+const button = document.querySelector("button");
+button.addEventListener("click", onSize);
+
 createGrid(DEFAULT_SIZE);
 body.appendChild(container);
 
