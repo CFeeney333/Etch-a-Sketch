@@ -13,6 +13,7 @@ for (let i = 1; i <= GRID_SIZE; i++) {
     item.className = "grid-item";
     item.style.gridColumn = "" + i + "/" + (i + 1);
     item.style.gridRow = "" + j + "/" + (j + 1);
+    item.addEventListener("mouseenter", onHover);
     container.appendChild(item);
   }
 }
