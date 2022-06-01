@@ -1,3 +1,17 @@
 body {
     background-color: burlywood;
 }
+
+.grid-container {
+    width: 800px;
+    height: 800px;
+    display: grid;
+}
+
+.grid-item {
+    background-color: white;
+}
+
+.hovered {
+    background-color: black;
+}
