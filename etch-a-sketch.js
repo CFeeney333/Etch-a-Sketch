@@ -34,4 +34,11 @@ function onHover(e) {
   e.target.classList.add("hovered");
 }
 
-function onSize(e) {}
+function onSize(e) {
+  let newSize = DEFAULT_SIZE;
+  do {
+    newSize = Number(prompt("Please enter a new size (less than 100)"));
+  } while (newSize > 100);
+  currentSize = newSize;
+  size.textContent = currentSize;
+}
