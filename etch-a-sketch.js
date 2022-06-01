@@ -8,6 +8,11 @@ container.className = "grid-container";
 createGrid(GRID_SIZE);
 
 function createGrid(size) {
+  // Delete the current grid
+  while (container.hasChildNodes()) {
+    container.removeChild(container.firstChild);
+  }
+
   for (let i = 1; i <= size; i++) {
     for (let j = 1; j <= size; j++) {
       const item = document.createElement("div");
