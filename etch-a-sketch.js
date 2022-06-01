@@ -4,8 +4,8 @@ const body = document.querySelector("body");
 
 const container = document.createElement("div");
 container.className = "grid-container";
-container.style.gridTemplateColumns = GRID_SIZE;
-container.style.gridTemplateRows = "auto";
+
+createGrid(GRID_SIZE);
 
 function createGrid(size) {
   for (let i = 1; i <= size; i++) {
