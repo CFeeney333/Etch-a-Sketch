@@ -10,6 +10,7 @@ let currentSize = DEFAULT_SIZE;
 size.textContent = currentSize;
 
 createGrid(DEFAULT_SIZE);
+body.appendChild(container);
 
 function createGrid(size) {
   // Delete the current grid
@@ -28,8 +29,6 @@ function createGrid(size) {
     }
   }
 }
-
-body.appendChild(container);
 
 function onHover(e) {
   e.target.classList.add("hovered");
