@@ -5,6 +5,8 @@ const body = document.querySelector("body");
 const container = document.createElement("div");
 container.className = "grid-container";
 
+const size = document.querySelector("#current-size");
+
 createGrid(DEFAULT_SIZE);
 
 function createGrid(size) {
