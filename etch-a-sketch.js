@@ -1,11 +1,11 @@
-const GRID_SIZE = 16;
+const DEFAULT_SIZE = 16;
 
 const body = document.querySelector("body");
 
 const container = document.createElement("div");
 container.className = "grid-container";
 
-createGrid(GRID_SIZE);
+createGrid(DEFAULT_SIZE);
 
 function createGrid(size) {
   // Delete the current grid
