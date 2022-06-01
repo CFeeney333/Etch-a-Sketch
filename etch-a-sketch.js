@@ -25,3 +25,5 @@ body.appendChild(container);
 function onHover(e) {
   e.target.classList.add("hovered");
 }
+
+function onSize(e) {}
