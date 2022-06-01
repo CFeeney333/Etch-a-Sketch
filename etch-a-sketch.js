@@ -27,14 +27,12 @@ function createGrid(size) {
       item.className = "grid-item";
       item.style.gridColumn = "" + i + "/" + (i + 1);
       item.style.gridRow = "" + j + "/" + (j + 1);
-      item.addEventListener("mouseenter", onHover);
+      item.addEventListener("mouseenter", (e) => {
+        e.target.classList.add("hovered");
+      });
       container.appendChild(item);
     }
   }
-}
-
-function onHover(e) {
-  e.target.classList.add("hovered");
 }
 
 function onSize(e) {
