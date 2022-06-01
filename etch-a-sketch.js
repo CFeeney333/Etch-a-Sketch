@@ -18,3 +18,7 @@ for (let i = 1; i <= GRID_SIZE; i++) {
 }
 
 body.appendChild(container);
+
+function onHover(e) {
+  e.target.classList.add("hovered");
+}
